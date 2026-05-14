@@ -1,0 +1,6 @@
+h1{
+    text-align: center;
+}
+p#comment{
+    transform:translateX(15px) ;
+}

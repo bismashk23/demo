@@ -2,14 +2,19 @@
 <html>
     <head>
         <title> practice page </title>
+        <link rel="stylesheet" href="commands.css">
     </head>
 
     <body>
-        <h1 style="text-align:center;"> Instruction Page </h1>
+        <h1> Instruction Page </h1>
         <p> 'ls -h' for showing hidden files.</p>
-        <p> 'git checkout main(branch name)' to switch branches.
-            'git init' create an empty Git repository or reinitialize an existing one.
-            'git '
-        </p>
+        <p> 'git checkout main(branch name)' to switch branches.   </p>
+        <p> 'git init' create an empty Git repository or reinitialize an existing one.</p>
+        <p> 'git log' to see commit history.</p> 
+        <p> 'git tag -a (tag name eg: v1.0) -m "message"' to create an annotated tag which stores your name, the date, and a message.</p>
+        <p> 'git tag' to see all tags in your repository.</p>
+        <p> 'git push origin (tag name)' to push tags to remote repo, as tags will otherwise exist only locally.</p>
+        <p id="comment"> <i><u>Pushing commits with git push does not push your tags hence we need to push it explicitly.</u></i></p>
+        <p> 'git push --tags' pushes all the tags at once.</p>
     </body>
 </html>
