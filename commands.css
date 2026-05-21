@@ -1,6 +1,20 @@
+body{
+    background-color: navajowhite;
+}
+
+div{
+    border: 1px solid brown;
+    margin: 2px;
+}
+
 h1{
     text-align: center;
 }
+
+p{
+    transform: translateX(5px);
+}
+
 p#comment{
     transform:translateX(15px) ;
 }
