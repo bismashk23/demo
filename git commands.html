@@ -8,24 +8,42 @@
     <body>
         <h1><u>Basic Git Commands Page</u></h1>
         <div>
+            <h3> Configuring git</h3>
+            2 types: global and local. <br>
+            global is for all the projects and local is for a particular project. <br>
+            <p>
+                git config --global user.name "your name" <br>
+                git config --global user.email "your email" <br>
+                git config --list (this command is used to check the configuration of git) <br>
+            </p>
+        </div>
+
+        <div>
+        <p> 'git clone (link)' to clone a repo from remote to local. </p>
+        <p> 'git status' to see the status of the repository. </p>
         <p> 'git init' create an empty Git repository or reinitialize an existing one.</p>
         <p> 'cd (file name)' to change directory.
-            'cd ..' to come out of a folder/file.
-        </p>
+            'cd ..' to come out of a folder/file.</p>
         <p> 'mkdir' make new directory.</p>
-
         <p> 'pwd' to view the path.</p>
+        <p> 'git push -u origin main' set upstream for a particular project and want to push everything on main and use 'git push' directly from next time. </p>
+
+        <p> 'git remote add origin (link)' to add new repo to remote of the name origin. <br>
+            'git remote -v' to verify remote.</p>
+
         <p> 'git checkout -b (new branch name)' to create and simultaneously.<br>
             'git branch -d (branch name which is to be deleted)' but <i>you have to be on a different branch to delete the current branch.</i><br>
-            'git push origin --delete (branch_name)' to delete the branch in remote repo.</p>
-        <p> 'git push origin (branch name)' to push all changes to remote repo from local files.</p>
+            'git push origin --delete (branch_name)' to delete the branch in remote repo. <br>
+            'git push origin (branch name)' to push all changes to remote repo from local files. <br>
+            'git branch -M main (or other name)' to rename the current branch name.</p>
+
         <p> 'ls -h' for showing hidden files.</p>
         <p> 'git checkout main(branch name)' to switch branches.   </p>
         <p> 'git log' to see commit history.</p> 
         <p> 'git tag -a (tag name eg: v1.0) -m "message"' to create an annotated tag which stores your name, the date, and a message.</p>
         <p> 'git tag' to see all tags in your repository.</p>
         <p> 'git push origin (tag name)' to push tags to remote repo, as tags will otherwise exist only locally.</p>
-        <p id="comment"> <i><u>- Pushing commits with git push does not push your tags hence we need to push it explicitly.</u></i></p>
+        <p id="comment"> <i><u>- Pushing commits with 'git push' does not push your tags, hence we need to push it explicitly.</u></i></p>
         <p> 'git push --tags' pushes all the tags at once.</p>
         <p> 'git tag -d (name)' deletes tag locally. <br>'git push origin --delete tag (name)' deletes tag from remote repo.</p>
 
